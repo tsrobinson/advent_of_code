@@ -2,6 +2,7 @@ using DelimitedFiles
 
 numbers = readdlm("input/day1.txt")
 
+# Part 1
 found = false
 i = 1
 
@@ -16,4 +17,16 @@ while !found
    end
 
    global i += 1
+end
+
+# Part 2
+using IterTools
+
+combinations_3 = subsets(numbers, 3)
+
+for i in combinations_3
+   if sum(i) == 2020
+      @show i[1]*i[2]*i[3]
+      break
+   end
 end
