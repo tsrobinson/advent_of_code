@@ -31,11 +31,8 @@ for i in 1:size(pw_data)[1]
     local indx1 = parse(Int, pw_params[1:(param_split-1)])
     local indx2 = parse(Int, pw_params[(param_split + 1):length(pw_params)])
 
-
     local search_char = pw_data[i,2][1]
     local pw = pw_data[i,3]
-
-
 
     if ((pw[indx1] == search_char) + (pw[indx2] == search_char)) == 1
         global possible_2 += 1
