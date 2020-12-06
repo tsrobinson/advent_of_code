@@ -1,3 +1,3 @@
 # Advent of Code 2020
 
-See [https://adventofcode.com/].
+See (https://adventofcode.com/).
